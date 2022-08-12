@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BringSallyUp", "BringSallyUp\BringSallyUp.csproj", "{9D03D382-B986-4415-9BFB-A5B8B1245D81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{3103FF24-AAF6-41E5-B029-BCBF550ABEF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{9E7ED89B-9AE9-465F-A775-C36CFC2BFF57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D03D382-B986-4415-9BFB-A5B8B1245D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D03D382-B986-4415-9BFB-A5B8B1245D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D03D382-B986-4415-9BFB-A5B8B1245D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D03D382-B986-4415-9BFB-A5B8B1245D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3103FF24-AAF6-41E5-B029-BCBF550ABEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3103FF24-AAF6-41E5-B029-BCBF550ABEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3103FF24-AAF6-41E5-B029-BCBF550ABEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3103FF24-AAF6-41E5-B029-BCBF550ABEF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E7ED89B-9AE9-465F-A775-C36CFC2BFF57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E7ED89B-9AE9-465F-A775-C36CFC2BFF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E7ED89B-9AE9-465F-A775-C36CFC2BFF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E7ED89B-9AE9-465F-A775-C36CFC2BFF57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31CB34EC-0DCF-4CAD-8590-55AD8EFD2E62}
+	EndGlobalSection
+EndGlobal

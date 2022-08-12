@@ -1,0 +1,44 @@
+﻿
+US:
+	As an anon, I want to identify myself.
+D		* Main page has username and password. Password is low effort low security. Make it clear
+D		* On input - POST and save in users table
+	As a user, I want to save today's time I was able to do the challenge.
+D		* No date selection.
+D		* time in seconds, optional comment
+	As a user, I want to see the history of my times by day.
+D		* A list of times. Order hardcoded by descending date.
+D		* Each entry has differencce in seconds from previous time. Red if less seconds, Green if more seconds.
+	As a user, I want to see other user progress
+D		* Separate tab.
+D		* Each entry has username, time in seconds, difference between this and previous.
+D		* List sorted by date descending. Hardcoded.
+	As a user, I want to click on user username and see his whole history..
+D		* Pretty much reuse your page with different user ID.
+
+If ppl use it:
+	As a user, I want to see some stats.
+		* Every stat has a username by it.
+		* Highest improvement today
+		* Highest improvement overall
+		* Longest time
+		* Number of participants today
+
+
+DB Tables:
+	User:
+		ID
+		Username
+		Plain password
+	Challenge
+		ID
+		UserId
+		Seconds
+		Comment
+		DateOfExecution
+
+
+FE deployment:
+	az storage blob upload-batch -s ..\public\ -d '$web' --auth-mode key --account-name bigsallyup 
+BE deployemnt:
+	via Profile
