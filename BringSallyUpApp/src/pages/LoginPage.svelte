@@ -1,6 +1,8 @@
 
 <script>
     import { login } from '../api/actions';
+    import { getNotificationsContext } from 'svelte-notifications';
+    const { addNotification } = getNotificationsContext();
     const minUsernamePasswordLength = 4;
     let disableSubmit = true;
     let username = '';
@@ -23,7 +25,7 @@
             plainPassword: plainPassword,
         }
 
-        login(loginPayload)
+        login(loginPayload, (errorMessage) => { addNotification({text: errorMessage, position: 'top-center', type: 'danger'}); console.log(errorMessage);})
             .then(() => disableSubmit = false);
     };
 </script>

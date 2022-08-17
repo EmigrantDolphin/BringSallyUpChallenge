@@ -3,7 +3,7 @@ import { pageConstants } from '../pages/PageConstants';
 import { UserIdStore, CurrentPageStore, AttemptStore } from '../stores';
 import { requestMethods, sendRequest } from "./sendRequest"
 
-export const login = (loginPayload) => {
+export const login = (loginPayload, onError) => {
     return sendRequest('/login', requestMethods.POST, loginPayload)
     .then((response => {
         if (response.status === 200){
@@ -15,9 +15,10 @@ export const login = (loginPayload) => {
                     return pageConstants.mainFeedPage;
                 });
             });
-        }
-        else {
-            console.log('pop some error');
+        } else {
+            response.text().then((message) => {
+                onError(message);
+            });
         }
     }));
 }

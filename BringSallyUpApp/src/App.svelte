@@ -1,4 +1,5 @@
 <script>
+	import Notifications from 'svelte-notifications';
 	import LoginPage from './pages/LoginPage.svelte';
 	import MainFeedPage from './pages/MainFeedPage.svelte';
 	import { pageConstants } from './pages/PageConstants';
@@ -10,7 +11,9 @@
 	<h1>Bring Sally Up! Challenge</h1>
     <hr/>
 	{#if $CurrentPageStore === pageConstants.loginPage}
-		<LoginPage />
+		<Notifications>
+			<LoginPage />
+		</Notifications>
 	{/if}
 	{#if $CurrentPageStore === pageConstants.mainFeedPage}
 		<MainFeedPage />
